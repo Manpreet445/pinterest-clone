@@ -1,8 +1,13 @@
 import { Ionicons } from '@expo/vector-icons';
 import React from 'react';
-import { Image, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Alert, Image, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 export default function App() {
+
+  const handleAlertPress = () => {
+    Alert.alert('Alert Button pressed');
+  };
+
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle="light-content" />
@@ -45,7 +50,7 @@ export default function App() {
         </View>
 
         {/* ALERT BUTTON VISUAL ONLY */}
-        <TouchableOpacity style={styles.alertButton}>
+        <TouchableOpacity style={styles.alertButton} onPress={handleAlertPress}>
           <Text style={styles.alertButtonText}>⚠️ Alert</Text>
         </TouchableOpacity>
 
