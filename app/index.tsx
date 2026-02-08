@@ -26,14 +26,12 @@ export default function App() {
             </TouchableOpacity>
           </View>
 
-          {/* MAIN IMAGE (Text is already in the image) */}
           <Image 
             source={require('../assets/images/cat.jpg')} 
             style={styles.heroImage} 
             resizeMode="cover"
           />
 
-          {/* Floating Scan Icon (UI Element) */}
           <View style={styles.scanIconContainer}>
             <Ionicons name="scan-outline" size={22} color="white" />
           </View>
@@ -73,15 +71,14 @@ export default function App() {
         <Text style={styles.sectionHeader}>More to explore</Text>
         
         <View style={styles.gridContainer}>
-          {/* Left Column: Lego Man */}
+
           <View style={styles.gridColumn}>
             <View style={[styles.gridItem, { height: 220 }]}>
-              {/* Text is baked into this image */}
               <Image 
                 source={require('../assets/images/nothing.jpg')}  
                 style={styles.gridImage} 
               />
-              {/* Pin Icon overlay (UI Element) */}
+         
               <View style={styles.pinIconOverlay}>
                 <Ionicons name="pricetag" size={14} color="white" />
               </View>
@@ -105,7 +102,7 @@ export default function App() {
           </View>
         </View>
 
-        {/* --- REQUIRED ASSIGNMENT BUTTON --- */}
+        {/* ---  Alert BUTTON --- */}
         <TouchableOpacity style={styles.alertButton} onPress={handleAlertPress}>
           <Text style={styles.alertButtonText}> Alert</Text>
         </TouchableOpacity>
