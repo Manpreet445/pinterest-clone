@@ -26,14 +26,10 @@ export default function App() {
         {/* MAIN IMAGE CARD */}
         <View style={styles.mainCard}>
           <Image 
-            source={{ uri: 'https://i.pinimg.com/736x/2a/3a/0c/2a3a0c5678051783424687570499694d.jpg' }} 
+            source={require('../assets/images/cat.jpg')}
             style={styles.heroImage} 
             resizeMode="cover"
           />
-          <View style={styles.imageOverlay}>
-            <Text style={styles.overlayTextSmall}>life update:</Text>
-            <Text style={styles.overlayTextLarge}>we’re so back</Text>
-          </View>
         </View>
 
         {/* ACTION ROW */}
